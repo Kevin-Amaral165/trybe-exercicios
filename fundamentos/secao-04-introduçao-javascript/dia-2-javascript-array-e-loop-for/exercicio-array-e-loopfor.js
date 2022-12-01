@@ -10,19 +10,32 @@
 //Utilizando o array que acabou de criar, imprima o resultado da divisão de cada um dos elementos por 2.
 
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let resultado = 0;
-console.log(numbers);
+//let resultado = 0;
+//console.log(numbers);
 
-for(let index = 0; index < numbers.length; index = index += 1){
-resultado += numbers[index];
-}
-console.log(resultado);
-let resultadoFinal = resultado / numbers.length;
-console.log(resultadoFinal);
+//for(let index = 0; index < numbers.length; index = index += 1){
+//resultado += numbers[index];
+//}
+//console.log(resultado);
+//let resultadoFinal = resultado / numbers.length;
+//console.log(resultadoFinal);
 
-if(resultadoFinal > 20){
-    console.log(" valor maior que 20 ")
-}else{
-    console.log( " valor menor ou igual a 20 ")
+//if(resultadoFinal > 20){
+//    console.log(" valor maior que 20 ")
+//}else{
+ //   console.log( " valor menor ou igual a 20 ")
+//}
+
+let highterNumber = [0];
+
+for(let index = 1; index < numbers.length; index = index += 1){
+    if(highterNumber < numbers[index]){
+        highterNumber = numbers[index];
+    }
 }
+
+console.log(highterNumber);
+
+
+
 
