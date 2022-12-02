@@ -13,7 +13,7 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 //let resultado = 0;
 //console.log(numbers);
 
-//for(let index = 0; index < numbers.length; index = index += 1){
+//for(let index = 0; index < numbers.length; index += 1){
 //resultado += numbers[index];
 //}
 //console.log(resultado);
@@ -26,16 +26,22 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
  //   console.log( " valor menor ou igual a 20 ")
 //}
 
-let highterNumber = [0];
+//let highterNumber = [0];
 
-for(let index = 1; index < numbers.length; index = index += 1){
-    if(highterNumber < numbers[index]){
-        highterNumber = numbers[index];
+//for(let index = 1; index < numbers.length; index  += 1){
+//    if(highterNumber < numbers[index]){
+//        highterNumber = numbers[index];
+//    }
+//}
+//console.log(highterNumber);
+
+let resultado = 0;
+for (let index = 0; index < numbers.length; index  += 1){
+    if ((numbers[index] % 2 )!== 0){
+        resultado += 1;
     }
 }
-
-console.log(highterNumber);
-
-
-
-
+if( resultado === 0){
+    console.log(" nenhum valor impar encontrado ");
+} else{console.log(resultado);
+}
