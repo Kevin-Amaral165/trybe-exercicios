@@ -35,13 +35,23 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 //}
 //console.log(highterNumber);
 
-let resultado = 0;
-for (let index = 0; index < numbers.length; index  += 1){
-    if ((numbers[index] % 2 )!== 0){
-        resultado += 1;
-    }
+//let resultado = 0;
+//for (let index = 0; index < numbers.length; index  += 1){
+//    if ((numbers[index] % 2 )!== 0){
+//        resultado += 1;
+//    }
+//}
+//if( resultado === 0){
+//    console.log(" nenhum valor impar encontrado ");
+//} else{console.log(resultado);
+//}
+
+
+let lowerNumber = numbers[0];
+
+for(let index = 1; index < numbers.length; index  += 1){
+   if(numbers[index] < lowerNumber){
+       lowerNumber = numbers[index];
+   }
 }
-if( resultado === 0){
-    console.log(" nenhum valor impar encontrado ");
-} else{console.log(resultado);
-}
+console.log(lowerNumber);
